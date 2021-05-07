@@ -1,0 +1,21 @@
+<template name="image_uploader">
+   <div class="form-group">
+   <lable class="text-white">{{label}}</lable>
+   <div class="change-photo">
+      <figure><img id="{{image_id}}" src="{{image_src}}" alt=""></figure>
+      <div  id="cross_icon_{{image_id}}" class="cross-image display_hidden">
+         <i class="material-icons pointer">Remove</i>
+      </div>
+      <div class="edit-img">
+         <form class="edit-phto">
+            <label class="fileContainer text-white pointer">
+            <i class="fa fa-camera-retro"></i>
+            {{placeholder_text}}
+            <input class="upload_file_input" style="display: none" type="file" accept="image/*">
+            <p id="invalid_{{image_id}}" class="error-noti display_hidden">{{invalid_image_text}}</p>
+            </label>
+         </form>
+      </div>
+   </div>
+	</div>
+</template>
